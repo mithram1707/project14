@@ -1,0 +1,36 @@
+/*14. Design a Social Media Profile Page 
+o Create a social media profile page with a timeline of posts. 
+o Use HTML to structure the content, CSS to style the website, and 
+JavaScript to add interactive elements. 
+o Make at least five git commits, ensuring each commit reflects significant 
+progress 
+o Host the website on GitHub Pages. */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Social Media Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <img src="https://i.pravatar.cc/150?img=3" alt="Profile Picture" class="profile-pic" />
+      <h2>Mithra</h2>
+      <p>Creative Designer | UI/UX Enthusiast ✨</p>
+    </div>
+
+    <div class="post-form">
+      <textarea id="newPost" placeholder="What's on your mind?"></textarea>
+      <button onclick="addPost()">Post</button>
+    </div>
+
+    <div id="timeline" class="timeline">
+      <!-- Posts will appear here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
